@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "lint": "eslint \"{src,test}/**/*.js\" --fix",
     "release": "standard-version",
     "release-alpha": "standard-version --prerelease alpha"
   },
