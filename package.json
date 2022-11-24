@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint \"{src,test}/**/*.js\" --fix",
     "release": "standard-version --skip.tag",
-    "release-alpha": "standard-version --prerelease alpha"
+    "release-alpha": "standard-version --skip.tag --prerelease alpha",
+    "deploy": "./scripts/create-release-tag.sh"
   },
   "dependencies": {},
   "devDependencies": {
