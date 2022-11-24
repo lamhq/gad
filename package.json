@@ -1,6 +1,6 @@
 {
   "name": "github-actions-demo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Demo setup a release/deploy workflow",
   "author": "lamhq",
   "private": true,
@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint \"{src,test}/**/*.js\" --fix",
     "release": "standard-version --skip.tag",
-    "release-alpha": "standard-version --prerelease alpha"
+    "release-alpha": "standard-version --skip.tag --prerelease alpha",
+    "deploy": "./scripts/create-release-tag.sh"
   },
   "dependencies": {},
   "devDependencies": {
