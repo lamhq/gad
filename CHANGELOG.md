@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-alpha.1](https://github.com/lamhq/gad/compare/v0.0.1-alpha.0...v0.0.1-alpha.1) (2022-11-24)
+
+
+### Bug Fixes
+
+* update code ([f9aa548](https://github.com/lamhq/gad/commit/f9aa548795319f5c246e989a64ad45d66050744c))
+
 ### 0.0.1-alpha.0 (2022-11-24)
 
 

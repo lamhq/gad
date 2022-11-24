@@ -1,6 +1,6 @@
 {
   "name": "github-actions-demo",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Demo setup a release/deploy workflow",
   "author": "lamhq",
   "private": true,
