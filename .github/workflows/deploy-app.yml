@@ -16,7 +16,7 @@ jobs:
 
       - name: Get current version
         id: npm_package_version
-        uses: Saionaro/extract-package-version@v1.0.6
+        uses: Saionaro/extract-package-version@v1.1.1
 
       - name: Print version
         run: echo "${{ steps.npm_package_version.outputs.version }}"
@@ -31,7 +31,7 @@ jobs:
 
       - name: Get current version
         id: npm_package_version
-        uses: Saionaro/extract-package-version@v1.0.6
+        uses: Saionaro/extract-package-version@v1.1.1
 
       - name: Print version
         run: echo "${{ steps.npm_package_version.outputs.version }}"
