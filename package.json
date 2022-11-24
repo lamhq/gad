@@ -1,11 +1,12 @@
 {
   "name": "github-actions-demo",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.1",
   "description": "Demo setup a release/deploy workflow",
   "author": "lamhq",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "lint": "eslint \"{src,test}/**/*.js\" --fix",
     "release": "standard-version",
     "release-alpha": "standard-version --prerelease alpha"
   },
