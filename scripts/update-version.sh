@@ -16,7 +16,7 @@ git checkout -b ${release_branch}
 git push --set-upstream origin ${release_branch} --no-verify
 
 # revert changes in master
-git branch --delete master
-git fetch master
+git branch -D master
+git fetch origin master
 
 echo "Release branch created. Please submit a pull request to merge it."
