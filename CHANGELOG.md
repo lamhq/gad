@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/lamhq/gad/compare/v0.0.3...v0.0.5) (2022-11-25)
+
+
+### Features
+
+* create release script ([596d0a3](https://github.com/lamhq/gad/commit/596d0a3779bd48c0127735068ab1a48ca1bb7a78))
+* new feature ([6147896](https://github.com/lamhq/gad/commit/61478964ddd44433e42de9cfc3e39b7ccaaa73a2))
+
 ### [0.0.4](https://github.com/lamhq/gad/compare/v0.0.3...v0.0.4) (2022-11-25)
 
 

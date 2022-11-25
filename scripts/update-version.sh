@@ -6,8 +6,7 @@ npm_package_version=$(cat package.json \
   | head -1 \
   | awk -F: '{ print $2 }' \
   | sed 's/[", ]//g')
-release_tag="v${npm_package_version}"
-release_branch="release/${release_tag}"
+release_branch="release/${npm_package_version}"
 
 # create release branch
 git checkout -b ${release_branch}
