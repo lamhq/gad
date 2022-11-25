@@ -1,11 +1,10 @@
-release_tag="v${npm_package_version}"
-release_branch="release/${release_tag}"
+# update version and changelog
+standard-version --skip.tag
 
 # create release branch
+release_tag="v${npm_package_version}"
+release_branch="release/${release_tag}"
 git checkout -b ${release_branch}
-
-# update version and changelog
-yarn run standard-version --skip.tag
 
 # push release branch
 git push --set-upstream origin ${release_branch} --no-verify
