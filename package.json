@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint \"{src,test}/**/*.js\" --fix",
-    "release": "standard-version --skip.tag",
+    "release": "./scripts/update-version.sh",
     "release-alpha": "standard-version --skip.tag --prerelease alpha",
     "deploy": "./scripts/create-release-tag.sh"
   },
