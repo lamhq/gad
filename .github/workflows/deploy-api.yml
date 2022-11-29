@@ -5,41 +5,49 @@ on:
     tags:      
       - v*
 
+common: &common
+  - name: Checkout code
+    uses: actions/checkout@v2
+
+  - name: Get current version
+    id: npm_package_version
+    uses: Saionaro/extract-package-version@v1.1.1
+
+  - name: Print version
+    run: echo "${{ steps.npm_package_version.outputs.version }}"
+
+
 jobs:
-  deploy_to_test:
-    environment: test
-    name: Deploy to Test
+  deploy_to_dev:
+    environment: dev
+    name: Deploy to Dev
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Get current version
-        id: npm_package_version
-        uses: Saionaro/extract-package-version@v1.1.1
-
-      - name: Print version
-        run: echo "${{ steps.npm_package_version.outputs.version }}"
+      <<: *common
 
       - name: Create deployment tag
         run: |-
-          git tag -f test
-          git push -f --no-verify origin test
+          git tag -f dev
+          git push -f --no-verify origin dev
+
+  deploy_to_staging:
+    environment: staging
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    steps:
+      <<: *common
+
+      - name: Create deployment tag
+        run: |-
+          git tag -f staging
+          git push -f --no-verify origin staging
 
   deploy_to_production:
     environment: prod
     name: Deploy to Production
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Get current version
-        id: npm_package_version
-        uses: Saionaro/extract-package-version@v1.1.1
-
-      - name: Print version
-        run: echo "${{ steps.npm_package_version.outputs.version }}"
+      <<: *common
 
       - name: Create deployment tag
         run: |-
