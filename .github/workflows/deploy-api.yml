@@ -21,6 +21,11 @@ jobs:
       - name: Print version
         run: echo "${{ steps.npm_package_version.outputs.version }}"
 
+      - name: Create deployment tag
+        run: |-
+          git tag -f test
+          git push -f --no-verify origin test
+
   deploy_to_production:
     environment: prod
     name: Deploy to Production
@@ -35,3 +40,9 @@ jobs:
 
       - name: Print version
         run: echo "${{ steps.npm_package_version.outputs.version }}"
+
+      - name: Create deployment tag
+        run: |-
+          git tag -f prod
+          git push -f --no-verify origin prod
+

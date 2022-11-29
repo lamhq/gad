@@ -8,12 +8,23 @@
   "scripts": {
     "lint": "eslint \"{src,test}/**/*.js\" --fix",
     "release": "./scripts/update-version.sh",
-    "release-alpha": "standard-version --skip.tag --prerelease alpha",
-    "deploy": "./scripts/create-release-tag.sh"
+    "release:alpha": "standard-version --skip.tag --prerelease alpha",
+    "deploy": "./scripts/create-release-tag.sh",
+    "prepare": "husky install",
+    "check-branch": "git-branch-is -r \"^(feature|fix|hotfix)/[a-z\\-\\d\\.]+$\""
   },
-  "dependencies": {},
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix"
+    ]
+  },  
   "devDependencies": {
-    "eslint": "7.2.0",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "eslint": "^7.31.0",
+    "git-branch-is": "^4.0.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.1",
     "standard-version": "^9.1.0"
   }
 }
