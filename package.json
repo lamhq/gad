@@ -6,12 +6,13 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "prepare": "husky install",
     "lint": "eslint \"{src,test}/**/*.js\" --fix",
+    "check-branch": "git-branch-is -r \"^(feature|fix|hotfix|release)/[a-z\\-\\d\\.]+$\"",
     "release": "./scripts/update-version.sh",
     "release:alpha": "standard-version --prerelease alpha --no-verify && git push --no-verify --follow-tags",
-    "deploy": "./scripts/create-release-tag.sh",
-    "prepare": "husky install",
-    "check-branch": "git-branch-is -r \"^(feature|fix|hotfix|release)/[a-z\\-\\d\\.]+$\""
+    "release:hotfix": "standard-version --no-verify && git push --no-verify --follow-tags",
+    "deploy": "./scripts/create-release-tag.sh"
   },
   "lint-staged": {
     "*.ts": [
