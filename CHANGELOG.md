@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7-alpha.0](https://github.com/lamhq/gad/compare/v0.0.6...v0.0.7-alpha.0) (2022-11-29)
+
+
+### Features
+
+* update alpha release script ([744834a](https://github.com/lamhq/gad/commit/744834a9420a935f79890b2eef870274d79b0255))
+* update alpha release script ([51ccfbc](https://github.com/lamhq/gad/commit/51ccfbcc6810a640539f4ac14851bdd12a31bf20))
+* update deploy workflow ([2289892](https://github.com/lamhq/gad/commit/22898925193df7a7f9c801530da746d15ed2c51f))
+
 ### [0.0.6](https://github.com/lamhq/gad/compare/v0.0.3...v0.0.6) (2022-11-29)
 
 
