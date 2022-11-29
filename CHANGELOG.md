@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/lamhq/gad/compare/v0.0.3...v0.0.6) (2022-11-29)
+
+
+### Features
+
+* create release script ([596d0a3](https://github.com/lamhq/gad/commit/596d0a3779bd48c0127735068ab1a48ca1bb7a78))
+* new feature ([6147896](https://github.com/lamhq/gad/commit/61478964ddd44433e42de9cfc3e39b7ccaaa73a2))
+* setup husky ([#9](https://github.com/lamhq/gad/issues/9)) ([2cfea68](https://github.com/lamhq/gad/commit/2cfea68905d50de404bd770a0b2f8294f2c8406d))
+
+
+### Bug Fixes
+
+* fix bug ([50d1c7b](https://github.com/lamhq/gad/commit/50d1c7b857f22aae8dc838aa0a5ebd6f47920d77))
+* pr template (2) ([#11](https://github.com/lamhq/gad/issues/11)) ([842b679](https://github.com/lamhq/gad/commit/842b679a34621d5a7a9f79701597db46a4de5048))
+* pr title ([#10](https://github.com/lamhq/gad/issues/10)) ([fe9c636](https://github.com/lamhq/gad/commit/fe9c63682289c39573a19c99dab9aca1b445d976))
+* release script ([#13](https://github.com/lamhq/gad/issues/13)) ([1ced9f7](https://github.com/lamhq/gad/commit/1ced9f7b471d093df391ecc88b26265b7eeedc46))
+* test auto merge ([#12](https://github.com/lamhq/gad/issues/12)) ([cf946b4](https://github.com/lamhq/gad/commit/cf946b4ac114b6be1b244abe77a345e980855a11))
+
 ### [0.0.5](https://github.com/lamhq/gad/compare/v0.0.3...v0.0.5) (2022-11-25)
 
 
