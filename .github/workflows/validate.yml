@@ -1,4 +1,4 @@
-name: Test and Lint
+name: Validate
 on:
   pull_request:
     branches:
@@ -22,4 +22,14 @@ jobs:
 
       - name: Run Linter
         run: yarn lint
+
+  pr:
+    name: Pull request
+    runs-on: ubuntu-latest
+    steps:
+      - name: conventional-pr-title
+        uses: aslafy-z/conventional-pr-title-action@v2.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
