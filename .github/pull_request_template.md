@@ -17,15 +17,6 @@ Ticket ID: [name](link)
 - Provide instructions so we can reproduce.
 - Please also list any relevant details for your test configuration
 
-- [ ] Test A
-- [ ] Test B
-
-**Test Configuration**:
-* Firmware version:
-* Hardware:
-* Toolchain:
-* SDK:
-
 ## Please review and confirm
 
 - [ ] I have performed a self-review of my code
