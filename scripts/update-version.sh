@@ -1,5 +1,5 @@
 # update version and changelog
-standard-version --skip.tag
+standard-version --skip.tag --skip.commit
 
 npm_package_version=$(cat package.json \
   | grep version \
@@ -12,6 +12,7 @@ release_branch="release/${npm_package_version}"
 git checkout -b ${release_branch}
 
 # push release branch
+git add . && git commit -m "chore(release): ${npm_package_version}"
 git push --set-upstream origin ${release_branch} --no-verify
 
 # revert changes in master

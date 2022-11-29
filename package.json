@@ -11,13 +11,13 @@
     "release:alpha": "standard-version --skip.tag --prerelease alpha",
     "deploy": "./scripts/create-release-tag.sh",
     "prepare": "husky install",
-    "check-branch": "git-branch-is -r \"^(feature|fix|hotfix)/[a-z\\-\\d\\.]+$\""
+    "check-branch": "git-branch-is -r \"^(feature|fix|hotfix|release)/[a-z\\-\\d\\.]+$\""
   },
   "lint-staged": {
     "*.ts": [
       "eslint --fix"
     ]
-  },  
+  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
