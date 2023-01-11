@@ -60,6 +60,15 @@ UPDATE accounts SET google_login_id='your@email.com' WHERE google_login_id='hqla
 1. Create a **draft** pull request to `master` and push to Github.
 1. When you finish the task, update the pull request's status to **Ready**, assign it to reviewer.
 
+```sh
+git checkout -b "feature/rename-workflow-file"
+git add .
+git commit -m "fix: rename workflow file"
+git push --set-upstream origin "feature/rename-workflow-file"
+
+git checkout master
+git pull
+```
 
 ### Hotfix
 
@@ -75,6 +84,14 @@ For developers:
     ```
 3. Push the hotfix branch to remote.
 
+```sh
+git checkout v0.0.8
+git checkout -b hotfix/fix-urgent-bug
+git add .
+git commit -m "fix: urgent bug"
+git push --set-upstream origin "hotfix/fix-urgent-bug" --no-verify
+yarn release:hotfix
+```
 
 ## Branching strategy
 
